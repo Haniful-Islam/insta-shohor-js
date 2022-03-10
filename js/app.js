@@ -60,7 +60,7 @@ const switchTab = (id) => {
 };
 
 const createPost = (post) => {
-  console.log(post);
+  // console.log(post);
   // const image = post;
   const div = document.createElement("article");
   div.classList.add("post");
@@ -149,7 +149,6 @@ const showPosts = (posts) => {
     productsContainer.appendChild(div);
   });
 };
-
 const displayLikedPosts = () => {
   const likedPosts = getLikedPosts();
   likedPosts.forEach((post) => {
@@ -159,8 +158,9 @@ const displayLikedPosts = () => {
 };
 
 const displayReportedPosts = () => {
+  // document.getElementById("reported").innerHTML = "";
   const reportedPosts = getReportedPosts();
-  posts.forEach((post) => {
+  reportedPosts.forEach((post) => {
     const div = createPost(post);
     document.getElementById("reported").appendChild(div);
   });
