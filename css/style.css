@@ -245,6 +245,8 @@ img {
   display: none;
 }
 
+
+
 @media only screen and (max-width: 992px) {
   #posts {
     grid-template-columns: repeat(2, 1fr);
@@ -256,3 +258,19 @@ img {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+/* <section class="container1">
+        <!-- localStorage and sessionStorage -->
+        <div>
+            <p>The main difference between localStorage and sessionStorage is that the localStorage stores data with no
+                expiration date, while the sessionStorage stores data from one session. Local storage data is permanent
+                and session storage is temporary.</p>
+
+        </div>
+        <div>
+            
+           
+            
+            
+        </div>
+    </section> */
