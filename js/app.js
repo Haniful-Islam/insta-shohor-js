@@ -29,12 +29,14 @@ const reportPost = (id) => {
 };
 
 const displayContent = (text) => {
-  return text.length < 30 ? 'text' : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>";
+  // console.log(text.length);
+
+  return text.slice(0, 30) + "<span class='fw-bold'>... read more</span>";
 };
 
 const switchTab = (id) => {
   if (id === "posts") {
-    document.getElementById("posts").style.display = "grid";
+    document.getElementById("posts").style.display = "block";
     document.getElementById("liked").style.display = "none";
     document.getElementById("reported").style.display = "none";
   } else if (id === "liked") {
@@ -53,8 +55,8 @@ const switchTab = (id) => {
 };
 
 const createPost = (post) => {
-  // console.log(post);
-  const image = post.image;
+  console.log(post);
+  // const image = post;
   const div = document.createElement("article");
   div.classList.add("post");
   div.innerHTML = `
